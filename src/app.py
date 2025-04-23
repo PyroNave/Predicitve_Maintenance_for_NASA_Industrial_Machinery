@@ -1,7 +1,7 @@
 import dash
 from dash import html, dcc
 import plotly.express as px
-from test import (
+from app_components import (
     header, input_form, prediction_card, feature_importance_plot,
     prediction_trend_plot, footer
 )
