@@ -24,3 +24,20 @@ input:focus {
 .bg-blue-50 {
     background-color: #eff6ff;
 }
+
+.custom-tabs {
+    border-bottom: 2px solid #4B5563;
+}
+.custom-tab {
+    color: gray;
+    background-color: #374151;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.custom-tab--selected {
+    background-color: #1F2937;
+    color: #ffffff;
+    border-bottom: 3px solid #F97316;
+}
