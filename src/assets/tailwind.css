@@ -1,0 +1,26 @@
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+button:hover {
+    transition: background-color 0.3s ease;
+}
+
+input {
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.bg-blue-50 {
+    background-color: #eff6ff;
+}
