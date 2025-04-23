@@ -1,8 +1,8 @@
 import dash
 from dash import html, dcc
 import plotly.express as px
-from components import (
-    header, input_form, prediction_card, feature_importance_plot, 
+from test import (
+    header, input_form, prediction_card, feature_importance_plot,
     prediction_trend_plot, footer
 )
 from utils import load_model_and_scaler, predict_rul, get_feature_importance
