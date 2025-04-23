@@ -19,8 +19,10 @@ class PointPredictor(SequenceModel):
             self.scaler_unfit = False
 
     def _preprocess(self, X):
-        X_scaled = self.scaler.transform(X[self.feature_names])
-        return X_scaled
+        copy = X.copy(deep=True)
+
+        copy[self.feature_names] = self.scaler.transform(X[self.feature_names])
+        return copy
 
     def fit(self, X, preprocess=True):
         copy = X.copy(deep=True)
